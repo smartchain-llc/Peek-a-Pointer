@@ -1,0 +1,9 @@
+add_executable(
+  inspectorTest
+  inspectorTest.cxx
+)
+target_link_libraries(
+  inspectorTest
+  GTest::gtest_main
+)
+gtest_discover_tests(inspectorTest)
